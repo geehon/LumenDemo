@@ -91,6 +91,11 @@ $app->configure('app');
 |
 */
 
+// composer添加代码提示
+// composer require barryvdh/laravel-ide-helper
+// composer require league/flysystem
+$app->register(Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class);
+
 // $app->register(App\Providers\AppServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
